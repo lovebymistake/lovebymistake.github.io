@@ -35,7 +35,20 @@
             text-decoration: none;
             font-weight: bold;
             border-radius: 4px;
-    
+        }
+        .client-link {
+            display: block;
+            margin-top: 10px;
+            color: #e30613;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .client-list {
+            display: none;
+            text-align: left;
+            margin-top: 20px;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -45,13 +58,43 @@
     </header>
     <section>
         <p>
-            Love by Mistake was formed by Josh Christopher in 2014, originally as a record label imprint via Sony Music UK, that later went independent. With a passion for discovering, developing and advocating for emerging talent, the company naturally expanded into music promotion and digital PR. LBM has had some successful PR campaigns for both major label artists and rising unsigned projects including international global star Billie Eilish, 3× platinum artist Alice Merton, Germany's biggest artist of 2022-2023 Nina Chuba, EDM superstar Steve Aoki and One Direction's Louis Tomlinson.
+            Love by Mistake was formed by Josh Christopher in 2014, originally as a record label imprint via Sony Music UK, that later went independent. With a passion for discovering, developing and advocating for emerging talent, the company naturally expanded into music promotion and digital PR. LBM has had some successful PR campaigns for both major label artists and rising unsigned projects including international global star Billie Eilish, 3× platinum artist Alice Merton, Germany's biggest artist o...
         </p>
-        <a class="email-button" href="mailto:jc@lovebymistake.co">CONTACT US</a>
-      
-</div>
-        
+        <a class="email-button" href="mailto:hello@lovebymistake.co">CONTACT US</a>
+        <span class="client-link" onclick="toggleClients()">Show full client list</span>
+        <div class="client-list" id="clientList">
+            Alec Benjamin, Alice Merton, Alma, Alessandra, Alex Lustig, Alycia Marie, Amilli, Andrew Applepie, Anjelica,
+            Amelie Siba, Arp Frique, Astronomyy, Babé Sila, Baby Ariel, BADSISTA, Bastian Benjamin, Bearcubs, benzii,
+            Billie Eilish, Blackwave, BLOODHYPE, BLVTH, BOY LOCO, Bulgarian Cartrader, Burt Cope, Chris James, Clairo,
+            COBRAH, Coely, Cosby, COTIS, Dario Lessing, David Bay, delzun, dery, Discrete, dj poolboi, dné,
+            DVTCH NORRIS, Dylan Fuentes, Ed Prosek, Eefje de Visser, Elodie Gervaise, EVIN, Feng Suave, Fleurie,
+            Foreign Fields, FOREIGN PERSONA, Gianni Mae, Glints, Grunenberg, Holly Walker, Ivan Ave, IYES, Jason Nolan,
+            Jakob (pka Jakob Ogawa), James Chatburn, Jean Valery, JEZ_EBEL, Joa, Jude York, Jumpa, K.ZIA, Karim Eid,
+            Kelvyn Colt, Kiara Nelson, Kiesza, Kilian and Jo, Kim Swim, Knife Girl, KRANKk, Kurran Karbal, Kytes,
+            L’aupaire, Lea Porcelain, LEEPA, Leonard Wellington, LIA LIA, Lie Ning, Lila Dupont, Lost Frequencies,
+            Louis Tomlinson, Luke Fono, Madam Bandit (Mindy Gledhill), Madanii & L:Lucid, Markus Nikolaus, Mavi Phoenix,
+            Max Wassen, Maxe, Melis, Meskerem Mees, Micayl, Moglii, MOLI, Moncrieff, Moonboy Inc, Morabeza Tobacco,
+            Moritz, Mousse T, Naomi Sharon, narou, Nina Chuba, Noah Klein, Novaa, Nova Twins, Okean Elzy, ORKID,
+            Oscar and the Wolf, Pablo Brooks, Philine Sonny, PORZELLAN BAR, Postaal, Promis3, Ragga Twins, RANI,
+            RIKAS, RMR, Saint Nomad, sakehands, Sam Feldt, Sam Valdez, Selassie, Selah Sue, Shelter Boy, Siloon,
+            Simian Ghost, SIPSODA, Sjaak, Sofia Karlberg, Sofia Monroy, Steve Aoki, Still Parade, SVEA, Sylvie Kreusch,
+            Ten Fé, Tep No, The Aston Shuffle, the Kii, The Hidden Cameras, The Magician, Thomas Azier, Tim Kamrad,
+            Tokyo Tea Room, Tom Smith, Tones & I, Trudy and the Romance, Tsar B, Tuimi, Véyah, Vera Bohl, Warhola,
+            Wolfskind, WEIRDO, Yann Gaudeuille, Yorina, X+Y=U, Ziggy2000, zinha
+        </div>
     </section>
-  
+    <script>
+        function toggleClients() {
+            const list = document.getElementById('clientList');
+            const link = document.querySelector('.client-link');
+            if (list.style.display === 'none' || list.style.display === '') {
+                list.style.display = 'block';
+                link.textContent = 'Hide client list';
+            } else {
+                list.style.display = 'none';
+                link.textContent = 'Show full client list';
+            }
+        }
+    </script>
 </body>
 </html>
