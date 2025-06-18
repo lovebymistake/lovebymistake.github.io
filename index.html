@@ -62,7 +62,7 @@
             <p> 
         </p>
         <a class="email-button" href="mailto:jc@lovebymistake.co">CONTACT US</a>
-        <span class="client-link" onclick="toggleClients()">Show full client list</span>
+        <span class="client-link" onclick="toggleClients()">Show past/present clients</span>
         <div class="client-list" id="clientList">
             Alec Benjamin, Alice Merton, Alma, Alessandra, Alex Lustig, Alycia Marie, Amilli, Andrew Applepie, Anjelica,
             Amelie Siba, Arp Frique, Astronomyy, Babé Sila, Baby Ariel, BADSISTA, Bastian Benjamin, Bearcubs, benzii,
@@ -90,10 +90,10 @@
             const link = document.querySelector('.client-link');
             if (list.style.display === 'none' || list.style.display === '') {
                 list.style.display = 'block';
-                link.textContent = 'Hide client list';
+                link.textContent = 'Hide past/present clients';
             } else {
                 list.style.display = 'none';
-                link.textContent = 'Show full client list';
+                link.textContent = 'Show past/present clients';
             }
         }
     </script>
