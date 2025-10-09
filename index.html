@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,6 +34,10 @@
             text-decoration: none;
             font-weight: bold;
             border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+        .email-button:hover {
+            background-color: #c10510;
         }
         .client-link {
             display: block;
@@ -50,16 +53,48 @@
             margin-top: 20px;
             font-size: 14px;
         }
+        footer {
+            margin-top: 60px;
+            padding: 40px 20px;
+            background: linear-gradient(to right, #000, #e30613);
+            color: #fff;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+        footer p {
+            margin: 0 0 15px;
+            font-size: 15px;
+        }
+        footer a {
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        footer a:hover {
+            color: #ffdada;
+        }
+        .etvoila-logo {
+            display: block;
+            margin: 10px auto 0;
+            width: 140px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        .etvoila-logo:hover {
+            transform: scale(1.08);
+            opacity: 0.9;
+        }
     </style>
 </head>
 <body>
     <header>
         <img src="LBM_LOGO_R01.png" alt="Love by Mistake logo">
     </header>
+
     <section>
         <p>
             Love by Mistake was formed by Josh Christopher in 2014, originally as a record label imprint via Sony Music UK, that then later went independent. With a passion for discovering and helping emerging talent at the start of their career, he naturally expanded from developing artists and consulting for artists, into music promotion and digital PR. Love by Mistake has had some successful PR campaigns for both major label artists and rising unsigned projects including international global star Billie Eilish, 3× platinum artist Alice Merton, Germany's biggest artist of 2022-2023 Nina Chuba, EDM superstar Steve Aoki and One Direction's Louis Tomlinson. With an ever-growing roster, and over 3 Billion streams from past/present clients, Love by Mistake is always available and has open doors for authentic talent: just drop us a message!  
-            <p> 
         </p>
         <a class="email-button" href="mailto:jc@lovebymistake.co">CONTACT US</a>
         <span class="client-link" onclick="toggleClients()">Show past/present clients</span>
@@ -82,9 +117,16 @@
             Ten Fé, Tep No, The Aston Shuffle, the Kii, The Hidden Cameras, The Magician, Thomas Azier, Tim Kamrad,
             Tokyo Tea Room, Tom Smith, Tones & I, Trudy and the Romance, Tsar B, Tuimi, Véyah, Vera Bohl, Warhola,
             Wolfskind, WEIRDO, Yann Gaudeuille, Yorina, X+Y=U, Ziggy2000, zinha
- 
         </div>
     </section>
+
+    <footer>
+        <p>Feel free to check out our sister company:</p>
+        <a href="http://etvoi.la" target="_blank" rel="noopener noreferrer">
+            <img src="02ETV_LOGO_B.png" alt="etvoila logo" class="etvoila-logo">
+        </a>
+    </footer>
+
     <script>
         function toggleClients() {
             const list = document.getElementById('clientList');
@@ -98,10 +140,5 @@
             }
         }
     </script>
-        <p>
-              <p>
-                  Feel free to check out our sister company: http://etvoi.la
-
-                      <p>
 </body>
 </html>
