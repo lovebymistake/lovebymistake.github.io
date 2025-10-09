@@ -48,12 +48,33 @@
             cursor: pointer;
         }
         .client-list {
-            display: none;
-            text-align: center;
+            display: none; /* hidden by default */
             margin-top: 20px;
             font-size: 14px;
+            text-align: left;
+            
+            /* Multi-column layout */
+            column-count: 3;        
+            column-gap: 30px;       
+            max-height: 400px;      
+            overflow-y: auto;       
+            padding: 10px 0;
+        }
+        @media (max-width: 768px) {
+            .client-list {
+                column-count: 2;    
+                max-height: 300px;
+            }
+        }
+        @media (max-width: 480px) {
+            .client-list {
+                column-count: 1;    
+                max-height: 250px;
+            }
         }
         .client-name {
+            display: inline-block;  
+            margin-bottom: 5px;
             cursor: pointer;
             color: #e30613;
             text-decoration: underline;
@@ -90,17 +111,6 @@
             transform: scale(1.08);
             opacity: 0.9;
         }
-
-        /* Responsive adjustments */
-        @media (max-width: 480px) {
-            footer p {
-                font-size: 14px;
-                margin-bottom: 10px;
-            }
-            .etvoila-logo {
-                width: 120px;
-            }
-        }
     </style>
 </head>
 <body>
@@ -115,6 +125,7 @@
         <a class="email-button" href="mailto:jc@lovebymistake.co">CONTACT US</a>
         <span class="client-link" onclick="toggleClients()">Show past/present clients</span>
         <div class="client-list" id="clientList">
+            <!-- Full client list with each name as clickable -->
             <span class="client-name">Alec Benjamin</span>,
             <span class="client-name">Alice Merton</span>,
             <span class="client-name">Alma</span>,
@@ -278,8 +289,8 @@
 
     <footer>
         <a href="http://etvoi.la" target="_blank" rel="noopener noreferrer">
-            <p>Feel free to check out our sister company:</p>
-            <img src="02ETV_LOGO_W.png" alt="etvoila logo" class="etvoila-logo">
+            <p>Feel free to check out our sister company: http://etvoi.la</p>
+            <img src="02ETV_LOGO_B.png" alt="etvoila logo" class="etvoila-logo">
         </a>
     </footer>
 
@@ -297,7 +308,7 @@
             }
         }
 
-        // Make every client name clickable, search Google for "Artist Name music" in news
+        // Make every client name clickable, open Google news search
         const clientNames = document.querySelectorAll('.client-name');
         clientNames.forEach(name => {
             name.addEventListener('click', () => {
