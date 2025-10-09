@@ -53,6 +53,11 @@
             margin-top: 20px;
             font-size: 14px;
         }
+        .client-name {
+            cursor: pointer;
+            color: #e30613;
+            text-decoration: underline;
+        }
         footer {
             margin-top: 60px;
             padding: 40px 20px;
@@ -61,10 +66,10 @@
             font-size: 14px;
             letter-spacing: 0.5px;
             text-align: center;
-            font-family: Arial, sans-serif; /* ensure footer font matches */
+            font-family: Arial, sans-serif;
         }
         footer p, footer a {
-            font-family: Arial, sans-serif; /* ensure consistency */
+            font-family: Arial, sans-serif;
             margin: 0 0 15px;
             font-size: 15px;
             text-decoration: none;
@@ -110,24 +115,164 @@
         <a class="email-button" href="mailto:jc@lovebymistake.co">CONTACT US</a>
         <span class="client-link" onclick="toggleClients()">Show past/present clients</span>
         <div class="client-list" id="clientList">
-            Alec Benjamin, Alice Merton, Alma, Alessandra, Alex Lustig, Alycia Marie, Amilli, Andrew Applepie, Anjelica,
-            Amelie Siba, Arp Frique, Astronomyy, Babé Sila, Baby Ariel, BADSISTA, Bastian Benjamin, Bearcubs, benzii,
-            Billie Eilish, Blackwave, BLOODHYPE, BLVTH, BOY LOCO, Bulgarian Cartrader, Burt Cope, Chris James, Clairo,
-            COBRAH, Coely, Cosby, COTIS, Dario Lessing, David Bay, delzun, dery, Discrete, dj poolboi, dné,
-            DVTCH NORRIS, Dylan Fuentes, Ed Prosek, Eefje de Visser, Elodie Gervaise, EVIN, Feng Suave, Fleurie,
-            Foreign Fields, FOREIGN PERSONA, Gianni Mae, Glints, Grunenberg, Holly Walker, Ivan Ave, IYES, Jason Nolan,
-            Jakob (pka Jakob Ogawa), James Chatburn, Jean Valery, JEZ_EBEL, Joa, Jude York, Jumpa, K.ZIA, Karim Eid,
-            Kelvyn Colt, Kiara Nelson, Kiesza, Kilian and Jo, Kim Swim, Knife Girl, KRANKk, Kurran Karbal, Kytes,
-            L’aupaire, Lea Porcelain, LEEPA, Leonard Wellington, LIA LIA, Lie Ning, Lila Dupont, Lost Frequencies,
-            Louis Tomlinson, Luke Fono, Madam Bandit (Mindy Gledhill), Madanii & L:Lucid, Markus Nikolaus, Mavi Phoenix,
-            Max Wassen, Maxe, Melis, Meskerem Mees, Micayl, Moglii, MOLI, Moncrieff, Moonboy Inc, Morabeza Tobacco,
-            Moritz, Mousse T, Naomi Sharon, narou, Nina Chuba, Noah Klein, Novaa, Nova Twins, Okean Elzy, ORKID,
-            Oscar and the Wolf, Pablo Brooks, Philine Sonny, PORZELLAN BAR, Postaal, Promis3, Ragga Twins, RANI,
-            RIKAS, RMR, Saint Nomad, sakehands, Sam Feldt, Sam Valdez, Selassie, Selah Sue, Shelter Boy, Siloon,
-            Simian Ghost, SIPSODA, Sjaak, Sofia Karlberg, Sofia Monroy, Steve Aoki, Still Parade, SVEA, Sylvie Kreusch,
-            Ten Fé, Tep No, The Aston Shuffle, the Kii, The Hidden Cameras, The Magician, Thomas Azier, Tim Kamrad,
-            Tokyo Tea Room, Tom Smith, Tones & I, Trudy and the Romance, Tsar B, Tuimi, Véyah, Vera Bohl, Warhola,
-            Wolfskind, WEIRDO, Yann Gaudeuille, Yorina, X+Y=U, Ziggy2000, zinha
+            <span class="client-name">Alec Benjamin</span>,
+            <span class="client-name">Alice Merton</span>,
+            <span class="client-name">Alma</span>,
+            <span class="client-name">Alessandra</span>,
+            <span class="client-name">Alex Lustig</span>,
+            <span class="client-name">Alycia Marie</span>,
+            <span class="client-name">Amilli</span>,
+            <span class="client-name">Andrew Applepie</span>,
+            <span class="client-name">Anjelica</span>,
+            <span class="client-name">Amelie Siba</span>,
+            <span class="client-name">Arp Frique</span>,
+            <span class="client-name">Astronomyy</span>,
+            <span class="client-name">Babé Sila</span>,
+            <span class="client-name">Baby Ariel</span>,
+            <span class="client-name">BADSISTA</span>,
+            <span class="client-name">Bastian Benjamin</span>,
+            <span class="client-name">Bearcubs</span>,
+            <span class="client-name">benzii</span>,
+            <span class="client-name">Billie Eilish</span>,
+            <span class="client-name">Blackwave</span>,
+            <span class="client-name">BLOODHYPE</span>,
+            <span class="client-name">BLVTH</span>,
+            <span class="client-name">BOY LOCO</span>,
+            <span class="client-name">Bulgarian Cartrader</span>,
+            <span class="client-name">Burt Cope</span>,
+            <span class="client-name">Chris James</span>,
+            <span class="client-name">Clairo</span>,
+            <span class="client-name">COBRAH</span>,
+            <span class="client-name">Coely</span>,
+            <span class="client-name">Cosby</span>,
+            <span class="client-name">COTIS</span>,
+            <span class="client-name">Dario Lessing</span>,
+            <span class="client-name">David Bay</span>,
+            <span class="client-name">delzun</span>,
+            <span class="client-name">dery</span>,
+            <span class="client-name">Discrete</span>,
+            <span class="client-name">dj poolboi</span>,
+            <span class="client-name">dné</span>,
+            <span class="client-name">DVTCH NORRIS</span>,
+            <span class="client-name">Dylan Fuentes</span>,
+            <span class="client-name">Ed Prosek</span>,
+            <span class="client-name">Eefje de Visser</span>,
+            <span class="client-name">Elodie Gervaise</span>,
+            <span class="client-name">EVIN</span>,
+            <span class="client-name">Feng Suave</span>,
+            <span class="client-name">Fleurie</span>,
+            <span class="client-name">Foreign Fields</span>,
+            <span class="client-name">FOREIGN PERSONA</span>,
+            <span class="client-name">Gianni Mae</span>,
+            <span class="client-name">Glints</span>,
+            <span class="client-name">Grunenberg</span>,
+            <span class="client-name">Holly Walker</span>,
+            <span class="client-name">Ivan Ave</span>,
+            <span class="client-name">IYES</span>,
+            <span class="client-name">Jason Nolan</span>,
+            <span class="client-name">Jakob (pka Jakob Ogawa)</span>,
+            <span class="client-name">James Chatburn</span>,
+            <span class="client-name">Jean Valery</span>,
+            <span class="client-name">JEZ_EBEL</span>,
+            <span class="client-name">Joa</span>,
+            <span class="client-name">Jude York</span>,
+            <span class="client-name">Jumpa</span>,
+            <span class="client-name">K.ZIA</span>,
+            <span class="client-name">Karim Eid</span>,
+            <span class="client-name">Kelvyn Colt</span>,
+            <span class="client-name">Kiara Nelson</span>,
+            <span class="client-name">Kiesza</span>,
+            <span class="client-name">Kilian and Jo</span>,
+            <span class="client-name">Kim Swim</span>,
+            <span class="client-name">Knife Girl</span>,
+            <span class="client-name">KRANKk</span>,
+            <span class="client-name">Kurran Karbal</span>,
+            <span class="client-name">Kytes</span>,
+            <span class="client-name">L’aupaire</span>,
+            <span class="client-name">Lea Porcelain</span>,
+            <span class="client-name">LEEPA</span>,
+            <span class="client-name">Leonard Wellington</span>,
+            <span class="client-name">LIA LIA</span>,
+            <span class="client-name">Lie Ning</span>,
+            <span class="client-name">Lila Dupont</span>,
+            <span class="client-name">Lost Frequencies</span>,
+            <span class="client-name">Louis Tomlinson</span>,
+            <span class="client-name">Luke Fono</span>,
+            <span class="client-name">Madam Bandit (Mindy Gledhill)</span>,
+            <span class="client-name">Madanii & L:Lucid</span>,
+            <span class="client-name">Markus Nikolaus</span>,
+            <span class="client-name">Mavi Phoenix</span>,
+            <span class="client-name">Max Wassen</span>,
+            <span class="client-name">Maxe</span>,
+            <span class="client-name">Melis</span>,
+            <span class="client-name">Meskerem Mees</span>,
+            <span class="client-name">Micayl</span>,
+            <span class="client-name">Moglii</span>,
+            <span class="client-name">MOLI</span>,
+            <span class="client-name">Moncrieff</span>,
+            <span class="client-name">Moonboy Inc</span>,
+            <span class="client-name">Morabeza Tobacco</span>,
+            <span class="client-name">Moritz</span>,
+            <span class="client-name">Mousse T</span>,
+            <span class="client-name">Naomi Sharon</span>,
+            <span class="client-name">narou</span>,
+            <span class="client-name">Nina Chuba</span>,
+            <span class="client-name">Noah Klein</span>,
+            <span class="client-name">Novaa</span>,
+            <span class="client-name">Nova Twins</span>,
+            <span class="client-name">Okean Elzy</span>,
+            <span class="client-name">ORKID</span>,
+            <span class="client-name">Oscar and the Wolf</span>,
+            <span class="client-name">Pablo Brooks</span>,
+            <span class="client-name">Philine Sonny</span>,
+            <span class="client-name">PORZELLAN BAR</span>,
+            <span class="client-name">Postaal</span>,
+            <span class="client-name">Promis3</span>,
+            <span class="client-name">Ragga Twins</span>,
+            <span class="client-name">RANI</span>,
+            <span class="client-name">RIKAS</span>,
+            <span class="client-name">RMR</span>,
+            <span class="client-name">Saint Nomad</span>,
+            <span class="client-name">sakehands</span>,
+            <span class="client-name">Sam Feldt</span>,
+            <span class="client-name">Sam Valdez</span>,
+            <span class="client-name">Selassie</span>,
+            <span class="client-name">Selah Sue</span>,
+            <span class="client-name">Shelter Boy</span>,
+            <span class="client-name">Siloon</span>,
+            <span class="client-name">Simian Ghost</span>,
+            <span class="client-name">SIPSODA</span>,
+            <span class="client-name">Sjaak</span>,
+            <span class="client-name">Sofia Karlberg</span>,
+            <span class="client-name">Sofia Monroy</span>,
+            <span class="client-name">Steve Aoki</span>,
+            <span class="client-name">Still Parade</span>,
+            <span class="client-name">SVEA</span>,
+            <span class="client-name">Sylvie Kreusch</span>,
+            <span class="client-name">Ten Fé</span>,
+            <span class="client-name">Tep No</span>,
+            <span class="client-name">The Aston Shuffle</span>,
+            <span class="client-name">the Kii</span>,
+            <span class="client-name">The Hidden Cameras</span>,
+            <span class="client-name">The Magician</span>,
+            <span class="client-name">Thomas Azier</span>,
+            <span class="client-name">Tim Kamrad</span>,
+            <span class="client-name">Tokyo Tea Room</span>,
+            <span class="client-name">Tom Smith</span>,
+            <span class="client-name">Tones & I</span>,
+            <span class="client-name">Trudy and the Romance</span>,
+            <span class="client-name">Tsar B</span>,
+            <span class="client-name">Tuimi</span>,
+            <span class="client-name">Véyah</span>,
+            <span class="client-name">Vera Bohl</span>,
+            <span class="client-name">Warhola</span>,
+            <span class="client-name">Wolfskind</span>,
+            <span class="client-name">WEIRDO</span>,
+            <span class="client-name">Yann Gaudeuille</span>,
+            <span class="client-name">Yorina</span>,
+            <span class="client-name">X+Y=U</span>,
+            <span class="client-name">Ziggy2000</span>,
+            <span class="client-name">zinha</span>
         </div>
     </section>
 
@@ -139,6 +284,7 @@
     </footer>
 
     <script>
+        // Toggle client list visibility
         function toggleClients() {
             const list = document.getElementById('clientList');
             const link = document.querySelector('.client-link');
@@ -150,6 +296,16 @@
                 link.textContent = 'Show past/present clients';
             }
         }
+
+        // Make every client name clickable, search Google for "Artist Name music" in news
+        const clientNames = document.querySelectorAll('.client-name');
+        clientNames.forEach(name => {
+            name.addEventListener('click', () => {
+                const query = encodeURIComponent(name.textContent + " music");
+                const url = `https://www.google.com/search?q=${query}&tbm=nws`; // news search
+                window.open(url, '_blank');
+            });
+        });
     </script>
 </body>
 </html>
