@@ -306,7 +306,7 @@ Over the years, Love by Mistake’s clients have accumulated over 3 billion stre
         clientNames.forEach(name => {
             name.addEventListener('click', () => {
                 const query = encodeURIComponent(name.textContent + " music");
-                const url = `https://www.google.com/search?q=${query}&tbm=nws`; // news search
+                const url = `https://www.google.com/search?q=${query}`; // news search
                 window.open(url, '_blank');
             });
         });
